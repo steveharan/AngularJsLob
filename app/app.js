@@ -12,14 +12,22 @@
             "$stateProvider",
             "$urlRouterProvider",
         function($stateProvider, $urlRouterProvider) {
-            $urlRouterProvider.otherwise("/products");
-
             $stateProvider
                 .state("productList", {
                     url: "/products",
                     templateUrl: "app/products/productListView.html",
                     controller: "ProductListCtrl as vm"
                 })
+                .state("productEdit", {
+                    url: "/products/edit/:productId",
+                    templateUrl: "app/products/productEditView.html",
+                    controller: "productEditCtrl as vm"
+                })
+                .state("home", {
+                    url: "/",
+                    templateUrl: "app/welcomeView.html"
+            });
+            $urlRouterProvider.otherwise("/");
         }]
     );
 }());
