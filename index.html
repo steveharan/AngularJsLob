@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Acme Product Management</title>
+    <script src="js/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/products/productListCtrl.js"></script>
+    <script src="js/angular-resource.min.js"></script>
+    <script src="common/services/common.services.js"></script>
+    <script src="common/services/productResource.js"></script>
+    <script src="common/services/productResourceMock.js"></script>
+    <script src="js/angular-mocks.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/app.css" rel="stylesheet"/>
+</head>
+<body ng-app="productManagement" ng-controller="ProductListCtrl as vm">
+    <div class="panel panel-primary">
+        <div class="panel-heading" style="font-size:large">Product
+        List</div>
+        <div class="panel-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td>
+                            <button class="btn btn-primary" type="button" ng-click="vm.toggleImage()"/>
+                                {{vm.showImage ? "Hide" : "Show"}} Image
+                        </td>
+                        <td>Product</td>
+                        <td>Code</td>
+                        <td>Available</td>
+                        <td>Price</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="product in vm.products">
+                        <td>
+                            <img ng-if="vm.showImage" ng-src="{{product.imageUrl}}"
+                                 style="width:20px;margin:2px" title="{{product.productName}}">
+                        </td>
+                        <td>{{product.productName}}</td>
+                        <td>{{product.productCode}}</td>
+                        <td>{{product.releaseDate}}</td>
+                        <td>{{product.price | currency:"£"}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
