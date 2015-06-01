@@ -22,7 +22,9 @@
                     <img ng-if="vm.showImage" ng-src="{{product.imageUrl}}"
                          style="width:20px;margin:2px" title="{{product.productName}}">
                 </td>
-                <td>{{product.productName}}</td>
+                <td>
+                    <a ui-sref="productDetail({productId: product.productId})" {{product.productName}}>{{product.productName}}</a>
+                </td>
                 <td>{{product.productCode}}</td>
                 <td>{{product.releaseDate}}</td>
                 <td>{{product.price | currency:"£"}}</td>

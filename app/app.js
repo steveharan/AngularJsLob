@@ -23,6 +23,11 @@
                     templateUrl: "app/products/productEditView.html",
                     controller: "productEditCtrl as vm"
                 })
+                .state("productDetail", {
+                    url: "/products/:productId",
+                    templateUrl: "app/products/productDetailView.html",
+                    controller: "ProductDetailCtrl as vm"
+                })
                 .state("home", {
                     url: "/",
                     templateUrl: "app/welcomeView.html"
