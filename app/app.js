@@ -17,13 +17,13 @@
             $stateProvider
                 .state("productList", {
                     url: "/products",
-                    templateUrl: "app/products/productListView.html",
+                    templateUrl: "app/products/list/productListView.html",
                     controller: "ProductListCtrl as vm"
                 })
                 .state("productEdit", {
                     abstract: true,
                     url: "/products/edit/:productId",
-                    templateUrl: "app/products/productEditView.html",
+                    templateUrl: "app/products/edit/productEditView.html",
                     controller: "ProductEditCtrl as vm",
                     resolve: {
                         productResource: "productResource",
@@ -36,19 +36,19 @@
                 })
                 .state("productEdit.info", {
                     url: "/info",
-                    templateUrl: "app/products/productEditInfoView.html"
+                    templateUrl: "app/products/edit/productEditInfoView.html"
                 })
                 .state("productEdit.price", {
                     url: "/price",
-                    templateUrl: "app/products/productEditPriceView.html"
+                    templateUrl: "app/products/edit/productEditPriceView.html"
                 })
                 .state("productEdit.tags", {
                     url: "/tag",
-                    templateUrl: "app/products/productEditTagView.html"
+                    templateUrl: "app/products/edit/productEditTagView.html"
                 })
                 .state("productDetail", {
                     url: "/products/:productId",
-                    templateUrl: "app/products/productDetailView.html",
+                    templateUrl: "app/products/Detail/productDetailView.html",
                     controller: "ProductDetailCtrl as vm",
                     resolve: {
                         productResource: "productResource",

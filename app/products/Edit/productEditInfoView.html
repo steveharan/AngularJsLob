@@ -13,7 +13,7 @@
                 <input class="form-control"
                        id="inputProductCode"
                        rows="3"
-                       ui-mask="AAA-****"
+                       ui-mask="AAA-9999"
                        ng-model="vm.product.productCode"/>
             </div>
         </div>
@@ -27,6 +27,7 @@
                            type="text"
                            datepicker-popup="MMM dd, yyyy"
                            is-open="vm.opened"
+                           show-weeks="false"
                            ng-model="vm.product.releaseDate">
                     <span class="input-group-btn">
                         <button class="btn btn-default"
@@ -43,6 +44,19 @@
                 <textarea class="form-control" id="inputDescription" placeholder="Description" rows="3" ng-model="vm.product.description"/>
             </div>
         </div>
-
+        <div class="form-group">
+            <div class="col-md-4 col-md-offset-2">
+                <span>
+                    <button class="btn btn-primary"
+                            style="width:80px;margin-right:10px"
+                            ng-click="vm.submit()">Save</button>
+                </span>
+                <span>
+                    <button class="btn btn-default"
+                            style="width:80px;margin-right:10px"
+                            ng-click="vm.cancel()">Cancel</button>
+                </span>
+            </div>
+        </div>
     </fieldset>
 </form>

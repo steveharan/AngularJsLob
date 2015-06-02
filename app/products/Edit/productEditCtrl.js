@@ -4,9 +4,9 @@
         angular
             .module("productManagement")
             .controller("ProductEditCtrl",
-                        ["product",ProductEditCtrl]);
+                        ["product", "$state",ProductEditCtrl]);
 
-        function ProductEditCtrl(product) {
+        function ProductEditCtrl(product, $state) {
             var vm = this;
 
             vm.product = product;
@@ -24,6 +24,15 @@
 
                 vm.opened = !vm.opened;
             }
+
+            vm.submit = function () {
+                vm.product.$save();
+            }
+
+            vm.cancel = function () {
+                $state.go('productList');
+            }
+
 
         }
     }()
