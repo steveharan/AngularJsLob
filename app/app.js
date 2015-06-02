@@ -7,6 +7,7 @@
             "ui.router",
             "ui.mask",
             "ui.bootstrap",
+            "firebase",
             "productResourceMock"
         ]);
 

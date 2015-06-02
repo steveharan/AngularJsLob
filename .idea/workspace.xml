@@ -7,17 +7,10 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Blogger/.idea/jsLibraryMappings.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AngNews/app/views/posts.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AngNews/app/scripts/controllers/posts.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/products/productDetailCtrl.js" afterPath="$PROJECT_DIR$/app/products/Detail/productDetailCtrl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/products/productDetailView.html" afterPath="$PROJECT_DIR$/app/products/Detail/productDetailView.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/products/productEditCtrl.js" afterPath="$PROJECT_DIR$/app/products/Edit/productEditCtrl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/products/productEditInfoView.html" afterPath="$PROJECT_DIR$/app/products/Edit/productEditInfoView.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/products/productEditPriceView.html" afterPath="$PROJECT_DIR$/app/products/Edit/productEditPriceView.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/products/productEditTagView.html" afterPath="$PROJECT_DIR$/app/products/Edit/productEditTagView.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/products/productEditView.html" afterPath="$PROJECT_DIR$/app/products/Edit/productEditView.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/products/productListCtrl.js" afterPath="$PROJECT_DIR$/app/products/List/productListCtrl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/products/productListView.html" afterPath="$PROJECT_DIR$/app/products/List/productListView.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/products/Detail/productDetailView.html" afterPath="$PROJECT_DIR$/app/products/Detail/productDetailView.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/products/Edit/productEditCtrl.js" afterPath="$PROJECT_DIR$/app/products/Edit/productEditCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Angular/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Angular/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -43,8 +36,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625">
-              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            <state vertical-scroll-proportion="-5.8235292">
+              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -53,8 +56,8 @@
       <file leaf-file-name="productDetailView.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/products/Detail/productDetailView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0">
-              <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+            <state vertical-scroll-proportion="-14.125">
+              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -65,15 +68,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="productEditInfoView.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/products/Edit/productEditInfoView.html">
+      <file leaf-file-name="productEditCtrl.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/products/Edit/productEditCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.125">
-              <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
-              <folding>
-                <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#4;n#fieldset#0;n#form#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#span#1;n#div#0;n#div#4;n#fieldset#0;n#form#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.61538464">
+              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,47 +82,7 @@
         <entry file="file://$PROJECT_DIR$/app/products/Detail/productDetailCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="productResourceMock.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/services/productResourceMock.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.2222223">
-              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="productEditPriceView.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/products/Edit/productEditPriceView.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="productEditCtrl.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/products/Edit/productEditCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39102563">
-              <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+              <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -132,18 +92,41 @@
         <entry file="file://$PROJECT_DIR$/common/services/productResource.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="5" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="5" />
+              <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="productListCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/products/List/productListCtrl.js">
+      <file leaf-file-name="productResourceMock.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/services/productResourceMock.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.services.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/services/common.services.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="productEditInfoView.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/products/Edit/productEditInfoView.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-33.125">
+              <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#4;n#fieldset#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#span#1;n#div#0;n#div#4;n#fieldset#0;n#form#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,7 +149,6 @@
       <list>
         <option value="$PROJECT_DIR$/common/services/common.services.js" />
         <option value="$PROJECT_DIR$/app/products/productListCtrl.js" />
-        <option value="$PROJECT_DIR$/common/services/productResource.js" />
         <option value="$PROJECT_DIR$/app/welcomeView.html" />
         <option value="$PROJECT_DIR$/app/products/productDetailCtrl.js" />
         <option value="$PROJECT_DIR$/app/products/productListView.html" />
@@ -176,11 +158,14 @@
         <option value="$PROJECT_DIR$/app/products/productEditView.html" />
         <option value="$PROJECT_DIR$/css/app.css" />
         <option value="$PROJECT_DIR$/common/services/productResourceMock.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/products/productEditCtrl.js" />
         <option value="$PROJECT_DIR$/app/products/productEditInfoView.html" />
-        <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/products/Edit/productEditInfoView.html" />
+        <option value="$PROJECT_DIR$/app/app.js" />
+        <option value="$PROJECT_DIR$/common/services/productResource.js" />
+        <option value="$PROJECT_DIR$/app/products/Detail/productDetailView.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/app/products/Detail/productDetailCtrl.js" />
         <option value="$PROJECT_DIR$/app/products/Edit/productEditCtrl.js" />
       </list>
     </option>
@@ -193,10 +178,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2339" />
-    <option name="y" value="217" />
+    <option name="x" value="-2452" />
+    <option name="y" value="218" />
     <option name="width" value="1311" />
-    <option name="height" value="910" />
+    <option name="height" value="859" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -438,12 +423,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2339" y="217" width="1311" height="910" extended-state="0" />
+    <frame x="-2452" y="218" width="1311" height="859" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41022593" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43670887" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27459955" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -659,13 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/services/common.services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13677812">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/welcomeView.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -699,9 +677,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.5">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -723,24 +699,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/products/List/productListCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.64102566">
           <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/app/products/Edit/productEditInfoView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        <state vertical-scroll-proportion="-33.125">
+          <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#4;n#fieldset#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#span#1;n#div#0;n#div#4;n#fieldset#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/services/common.services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/products/Detail/productDetailCtrl.js">
+    <entry file="file://$PROJECT_DIR$/common/services/productResourceMock.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/services/productResource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -748,15 +743,23 @@
     <entry file="file://$PROJECT_DIR$/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8235292">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/products/Detail/productDetailView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0">
-          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+        <state vertical-scroll-proportion="-14.125">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -766,37 +769,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/products/Edit/productEditInfoView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.125">
-          <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#4;n#fieldset#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#span#1;n#div#0;n#div#4;n#fieldset#0;n#form#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/services/productResource.js">
+    <entry file="file://$PROJECT_DIR$/app/products/Detail/productDetailCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/services/productResourceMock.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2222223">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/products/Edit/productEditCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39102563">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.61538464">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
           <folding />
         </state>
       </provider>

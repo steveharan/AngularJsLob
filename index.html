@@ -16,6 +16,8 @@
     <script src="js/angular-mocks.js"></script>
     <script src="js/ui-utils.min.js"></script>
     <script src="js/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/angularfire.min.js"></script>
 
     <!-- Application Scripts -->
     <script src="app/app.js"></script>
@@ -29,6 +31,9 @@
     <script src="common/services/productResourceMock.js"></script>
 </head>
 <body ng-app="productManagement">
+    <script>
+        var myDataRef = new Firebase('https://steveharan.firebaseio.com/');
+    </script>
     <nav class="navbar navbar-inverse">
         <div class="container">
             <a class="navbar-brand" ui-sref="home">SH Inc Product Management</a>
