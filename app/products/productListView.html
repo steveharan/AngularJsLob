@@ -28,6 +28,9 @@
                 <td>{{product.productCode}}</td>
                 <td>{{product.releaseDate}}</td>
                 <td>{{product.price | currency:"£"}}</td>
+                <td>
+                    <a class="btn btn-primary" ui-sref="productEdit.info({productId: product.productId})">Edit</a>
+                </td>
             </tr>
             </tbody>
         </table>

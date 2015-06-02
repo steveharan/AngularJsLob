@@ -1,53 +1,23 @@
-<form class="form-horizontal">
-    <fieldset>
-
-        <!-- Form Name -->
-        <legend>Product</legend>
-
-        <!-- Text input-->
-        <div class="control-group">
-            <label class="control-label" for="txtProductName">Product Name</label>
-            <div class="controls">
-                <input id="txtProductName" name="txtProductName" type="text" placeholder="Product Name" class=" form-control" required="">
-                <p class="help-block">Enter product name</p>
-            </div>
+<div class="panel panel-primary">
+    <div class="panel-heading" style="font-size:large">
+        {{vm.title}}
+    </div>
+    <div class="panel-body">
+        <div class="wizard">
+            <a ui-sref=".info"
+               ui-sref-active="active">
+                Basic info
+            </a>
+            <a ui-sref=".price"
+               ui-sref-active="active">
+                Price info
+            </a>
+            <a ui-sref=".tags"
+               ui-sref-active="active">
+                Search Tags
+            </a>
         </div>
+        <div ui-view></div>
 
-        <!-- Text input-->
-        <div class="control-group">
-            <label class="control-label" for="txtProductCode">Product Code</label>
-            <div class="controls">
-                <input id="txtProductCode" name="txtProductCode" type="text" placeholder="Product Code" class=" form-control" required="">
-                <p class="help-block">Enter Product Code</p>
-            </div>
-        </div>
-
-        <!-- Text input-->
-        <div class="control-group">
-            <label class="control-label" for="dtDateAvailable">Available</label>
-            <div class="controls">
-                <input id="dtDateAvailable" name="dtDateAvailable" type="text" placeholder="Date Available" class=" form-control" required="">
-                <p class="help-block">Enter Date Available</p>
-            </div>
-        </div>
-
-        <!-- Text input-->
-        <div class="control-group">
-            <label class="control-label" for="mnPrice">Price</label>
-            <div class="controls">
-                <input id="mnPrice" name="mnPrice" type="text" placeholder="Price" class=" form-control" required="">
-                <p class="help-block">Enter Price</p>
-            </div>
-        </div>
-
-        <!-- Text input-->
-        <div class="control-group">
-            <label class="control-label" for="txtImageUrl">Image URL</label>
-            <div class="controls">
-                <input id="txtImageUrl" name="txtImageUrl" type="text" placeholder="http://" class=" form-control" required="">
-                <p class="help-block">Enter Image Url</p>
-            </div>
-        </div>
-
-    </fieldset>
-</form>
+    </div>
+</div>

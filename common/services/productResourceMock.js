@@ -11,7 +11,7 @@
                 {
                     "productId": 1,
                     "productName": "Leaf Rake",
-                    "productCode": "FGH-111",
+                    "productCode": "FGH-1111",
                     "releaseDate": "March 19, 2009",
                     "description": "Leaf rake with wooden handle",
                     "cost": 9.00,
@@ -35,7 +35,7 @@
                 {
                     "productId": 3,
                     "productName": "Goat",
-                    "productCode": "FGsH-11sd1",
+                    "productCode": "FGH-1121",
                     "releaseDate": "April 19, 2009",
                     "description": "goat",
                     "cost": 9.00,
@@ -47,7 +47,7 @@
                 {
                     "productId": 4,
                     "productName": "Random",
-                    "productCode": "FGrH-111rr",
+                    "productCode": "FGH-3333",
                     "releaseDate": "March 19, 2019",
                     "description": "Bla ",
                     "cost": 91.00,
@@ -63,7 +63,7 @@
             $httpBackend.whenGET(productUrl).respond(products);
 
             var editingRegex = new RegExp(productUrl + "/[0-9][0-9]*", '');
-            $httpBackend.whenGET(productUrl + "/2").respond(function(method, url, data) {
+            $httpBackend.whenGET(editingRegex).respond(function(method, url, data) {
                 var product = {"productId": 0};
                 var parameters = url.split('/');
                 var length = parameters.length;

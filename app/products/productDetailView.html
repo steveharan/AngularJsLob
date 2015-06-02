@@ -1,7 +1,7 @@
 <div class="panel panel-primary">
     <div class="panel-heading" style="font-size: large">{{vm.title}}</div>
     <div class="panel-body">
-        <div class="row">
+        <div class="col-md-6">
             <div class="row">
                 <div class="col-md-2">Name:</div>
                 <div class="col-md-6">{{vm.product.productName}}</div>
@@ -50,7 +50,7 @@
             Back
         </a>
         <a class="btn btn-primary"
-           ui-sref="productEdit({productId: vm.product.productId})"
+           ui-sref="productEdit.info({productId: vm.product.productId})"
            style="width:80px">
             <i class="glyphicon glyphicon-chevron-right"></i>
             Edit
