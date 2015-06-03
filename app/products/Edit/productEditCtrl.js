@@ -13,11 +13,6 @@
 
             vm.product = product;
 
-            var productsRef = ref.child("products");
-            productsRef.set(
-                vm.product.toJSON()
-            );
-
             if (vm.product && vm.product.productId) {
                 vm.title = "Edit: " + vm.product.productName;
             }
@@ -33,6 +28,17 @@
             }
 
             vm.submit = function () {
+                var productsRef = ref.child("products");
+                if (vm.product && vm.product.productId) {
+                    productsRef.set(
+                        vm.product.toJSON()
+                    );
+                }
+                else {
+                    productsRef.push(
+                        vm.product.toJSON()
+                    );
+                }
                 vm.product.$save();
             }
 
