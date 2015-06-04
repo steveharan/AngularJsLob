@@ -7,6 +7,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/app.css" rel="stylesheet"/>
     <link href="css/toastr.css" rel="stylesheet"/>
+    <link href="css/angular-chart.css" rel="stylesheet"/>
 
     <!-- Library Scripts -->
     <script src="js/jquery-1.11.3.min.js"></script>
@@ -20,12 +21,15 @@
     <script src="js/firebase.js"></script>
     <script src="js/angularfire.min.js"></script>
     <script src="js/toastr.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/angular-charts.min.js"></script>
 
     <!-- Application Scripts -->
     <script src="app/app.js"></script>
     <script src="app/products/List/productListCtrl.js"></script>
     <script src="app/products/Detail/productDetailCtrl.js"></script>
     <script src="app/products/Edit/productEditCtrl.js"></script>
+    <script src="app/prices/priceAnalyticsCtrl.js"></script>
 
     <!-- Services -->
     <script src="common/services/common.services.js"></script>
@@ -55,7 +59,9 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li><a ui-sref="productList">Product List</a></li>
-                <li><a ui-sref="productEdit.info({productId:0})"><i class="glyphicon glyphicon-plus"></i>Add Product</a></li>
+                <li><a ui-sref="productEdit.info({productId:0})">
+                    <i class="glyphicon glyphicon-plus"></i>Add Product</a></li>
+                <li><a ui-sref="priceAnalytics">Price Analytics</a> </li>
             </ul>
         </div>
     </nav>

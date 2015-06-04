@@ -8,6 +8,7 @@
             "ui.mask",
             "ui.bootstrap",
             "firebase",
+            "angularCharts",
             "productResourceMock"
         ]);
 
@@ -46,6 +47,17 @@
                 .state("productEdit.tags", {
                     url: "/tag",
                     templateUrl: "app/products/edit/productEditTagView.html"
+                })
+                .state("priceAnalytics", {
+                    url: "/priceAnalytics",
+                    templateUrl: "app/prices/priceAnalyticsView.html",
+                    controller: "PriceAnalyticsCtrl",
+                    resolve: {
+                        productResource: "productResource",
+                        products: function (productResource) {
+                            return productResource.query().$promise;
+                        }
+                    }
                 })
                 .state("productDetail", {
                     url: "/products/:productId",
