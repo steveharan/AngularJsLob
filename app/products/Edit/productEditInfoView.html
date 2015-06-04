@@ -1,29 +1,63 @@
-<form name="productForm" class="form-horizontal">
+<form name="productForm" class="form-horizontal" novalidate>
     <fieldset>
         <legend>Basic Product Information</legend>
-        <div class="form-group">
+        <div class="form-group"
+                ng-class="{'has-error':productForm.inputProductName.$invalid &&
+                                        productForm.inputProductName.$dirty}">
             <label class="col-md-2 control-label" for="inputProductName">Product Name</label>
             <div class="col-md-4">
-                <input class="form-control" id="inputProductName" type="text" placeholder="Product Name" ng-model="vm.product.productName" />
+                <input class="form-control"
+                       id="inputProductName"
+                       name="inputProductName"
+                       type="text" placeholder="Product Name (required)"
+                       ng-model="vm.product.productName"
+                       required
+                        ng-minlength="5"
+                        ng-maxlength="50"/>
             </div>
+            <span class="help-block has-error"
+                  ng-show="productForm.inputProductName.$invalid &&
+                            productForm.inputProductName.$dirty">
+                Product name is required
+            </span>
+            <span class="help-block has-success"
+                  ng-show="!productForm.inputProductName.$invalid">
+                <span class="glyphicon glyphicon-thumbs-up"></span>
+            </span>
         </div>
-        <div class="form-group">
+        <div class="form-group"
+             ng-class="{'has-error':productForm.inputProductCode.$invalid &&
+                                    productForm.inputProductCode.$dirty}">
             <label class="col-md-2 control-label" for="inputProductCode">Product Code</label>
             <div class="col-md-4">
                 <input class="form-control"
                        id="inputProductCode"
+                       name="inputProductCode"
                        rows="3"
                        ui-mask="AAA-9999"
-                       ng-model="vm.product.productCode"/>
+                       ng-model="vm.product.productCode"
+                        required/>
             </div>
+            <span class="help-block has-error"
+                  ng-show="productForm.inputProductCode.$invalid &&
+                           productForm.inputProductCode.$dirty">
+                Product code is required
+            </span>
+            <span class="help-block has-success"
+                  ng-show="!productForm.inputProductCode.$invalid">
+                <span class="glyphicon glyphicon-thumbs-up"></span>
+            </span>
         </div>
-        <div class="form-group">
+        <div class="form-group"
+             ng-class="{'has-error':productForm.inputAvailabilityDate.$invalid &&
+                                    productForm.inputAvailabilityDate.$dirty}">
             <label class="col-md-2 control-label"
                    for="inputAvailabilityDate">Availability</label>
             <div class="col-md-4">
                 <div class="input-group">
                     <input class="form-control"
                            id="inputAvailabilityDate"
+                           name="inputAvailabilityDate"
                            type="text"
                            datepicker-popup="MMM dd, yyyy"
                            is-open="vm.opened"
@@ -38,10 +72,27 @@
                 </div>
             </div>
         </div>
-        <div class="form-group">
-            <label class="col-md-2 control-label" for="inputDescription">Description</label>
+        <div class="form-group"
+             ng-class="{'has-error':productForm.inputDescription.$invalid &&
+                                    productForm.inputDescription.$dirty}">
+            <label class="col-md-2 control-label" for="inputDescription">Description (required)</label>
             <div class="col-md-10">
-                <textarea class="form-control" id="inputDescription" placeholder="Description" rows="3" ng-model="vm.product.description"/>
+                <textarea class="form-control"
+                          id="inputDescription"
+                          name="inputDescription"
+                          placeholder="Description (required)"
+                          rows="3"
+                          ng-model="vm.product.description"
+                        required/>
+            <span class="help-block has-error"
+                  ng-show="productForm.inputDescription.$invalid &&
+                            productForm.inputDescription.$dirty">
+                Product description is required
+            </span>
+            <span class="help-block has-success"
+                  ng-show="!productForm.inputDescription.$invalid">
+                <span class="glyphicon glyphicon-thumbs-up"></span>
+            </span>
             </div>
         </div>
         <div class="form-group">
@@ -49,7 +100,9 @@
                 <span>
                     <button class="btn btn-primary"
                             style="width:80px;margin-right:10px"
-                            ng-click="vm.submit()">Save</button>
+                            ng-click="vm.submit(productForm.$valid, productPriceForm.$valid)">
+<!--                            ng-disabled="productForm.$invalid"-->
+                            Save</button>
                 </span>
                 <span>
                     <button class="btn btn-default"
