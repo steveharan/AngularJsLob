@@ -1,1 +1,66 @@
-<p>Price Info</p>
+<form name="productPriceForm" class="form-horizontal" novalidate>
+    <fieldset>
+        <legend>Product Pricing Information</legend>
+        <div class="form-group"
+             ng-class="{'has-error':productPriceForm.inputProductPrice.$invalid &&
+                                        productPriceForm.inputProductPrice.$dirty}">
+            <label class="col-md-2 control-label" for="inputProductPrice">Product Price</label>
+            <div class="col-md-4">
+                <input class="form-control"
+                       id="inputProductPrice"
+                       name="inputProductPrice"
+                       type="text" placeholder="Product Price (required)"
+                       ng-model="vm.product.price"
+                       ng-pattern="/^[0-9]{1,7}(\.[0-9]+)?$/"
+                       required />
+            </div>
+            <span class="help-block has-error"
+                  ng-show="productPriceForm.inputProductPrice.$invalid &&
+                            productPriceForm.inputProductPrice.$dirty">
+                Product price is required
+            </span>
+            <span class="help-block has-success"
+                  ng-show="!productPriceForm.inputProductPrice.$invalid">
+                <span class="glyphicon glyphicon-thumbs-up"></span>
+            </span>
+        </div>
+        <div class="form-group"
+             ng-class="{'has-error':productPriceForm.inputProductCost.$invalid &&
+                                    productPriceForm.inputProductCost.$dirty}">
+            <label class="col-md-2 control-label" for="inputProductCost">Product Cost</label>
+            <div class="col-md-4">
+                <input class="form-control"
+                       id="inputProductCost"
+                       name="inputProductCost"
+                       ng-model="vm.product.cost"
+                       ng-pattern="/^[0-9]{1,7}(\.[0-9]+)?$/"
+                       required/>
+            </div>
+            <span class="help-block has-error"
+                  ng-show="productPriceForm.inputProductCost.$invalid &&
+                           productPriceForm.inputProductCost.$dirty">
+                Product cost is required
+            </span>
+            <span class="help-block has-success"
+                  ng-show="!productPriceForm.inputProductCost.$invalid">
+                <span class="glyphicon glyphicon-thumbs-up"></span>
+            </span>
+        </div>
+        <div class="form-group">
+            <div class="col-md-4 col-md-offset-2">
+                <span>
+                    <button class="btn btn-primary"
+                            style="width:80px;margin-right:10px"
+                            ng-click="vm.submit(productPriceForm.$valid)">
+                        <!--                            ng-disabled="productForm.$invalid"-->
+                        Save</button>
+                </span>
+                <span>
+                    <button class="btn btn-default"
+                            style="width:80px;margin-right:10px"
+                            ng-click="vm.cancel()">Cancel</button>
+                </span>
+            </div>
+        </div>
+    </fieldset>
+</form>
