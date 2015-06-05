@@ -29,7 +29,7 @@
         function calculatePriceFromPercent(cost, percent) {
             var price = cost;
             if (cost && percent) {
-                price = cost + (cost * percent) / 100;
+                price = +cost + (+cost * +ÛS22percent) / 100;
                 price = (Math.round(price * 100)) / 100;
             }
             return price;
@@ -38,7 +38,7 @@
         function calculatePriceFromAmount(cost, amount) {
             var price = cost;
             if (cost && amount) {
-                price = cost + amount;
+                price = +cost + +amount;
                 price = (Math.round(price * 100)) / 100;
             }
             return price;

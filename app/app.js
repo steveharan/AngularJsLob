@@ -1,5 +1,22 @@
 (function () {
     "use strict";
+    var toastrOptions = {
+        "closeButton": false,
+        "debug": false,
+        "newestOnTop": false,
+        "progressBar": false,
+        "positionClass": "toast-bottom-full-width",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    };
     var app = angular.module(
         "productManagement",
         [
@@ -12,10 +29,23 @@
             "productResourceMock"
         ]);
 
+    app.config(function ($provide) {
+        $provide.decorator("$exceptionHandler",
+            ["$delegate",
+                function ($delegate) {
+                    return function (exception, cause) {
+                        exception.message = "System Error: " + exception.message;
+                        $delegate(exception, cause);
+                        toastr.error(exception.message);
+                    };
+                }]);
+    });
+
     app.config([
             "$stateProvider",
             "$urlRouterProvider",
         function($stateProvider, $urlRouterProvider) {
+
             $stateProvider
                 .state("productList", {
                     url: "/products",
@@ -55,7 +85,16 @@
                     resolve: {
                         productResource: "productResource",
                         products: function (productResource) {
-                            return productResource.query().$promise;
+                            return productResource.query(success, failure).$promise;
+                            function success() {
+                                toastr.options = toastrOptions;
+                                toastr.info('Data Loaded Successfully');
+                            };
+
+                            function failure(response) {
+                                toastr.options = toastrOptions;
+                                toastr.error(response.config.url + ' is not available');
+                            };
                         }
                     }
                 })
@@ -68,7 +107,8 @@
                         product: function (productResource, $stateParams) {
                             var productId = $stateParams.productId;
                             return productResource.get(
-                                {productId: productId}).$promise;
+                                {productId: productId}).$promise();
+
                         }
                     }
                 })

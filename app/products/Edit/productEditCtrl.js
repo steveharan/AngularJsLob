@@ -1,6 +1,22 @@
 (function () {
         "use strict";
-
+        var toastrOptions = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": false,
+            "positionClass": "toast-bottom-full-width",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        };
         angular
             .module("productManagement")
             .controller("ProductEditCtrl",
@@ -26,7 +42,7 @@
                 "hideMethod": "fadeOut"
             }
 
-            var ref = new Firebase("https://steveharan.firebaseio.com/")
+            var ref = new Firebase("https://steveharan.firebaseio.com/");
 
             var vm = this;
 
@@ -78,6 +94,8 @@
             }
 
             vm.cancel = function () {
+                toastr.options = toasterOptions;
+                toastr.info("Cancelled");
                 $state.go('productList');
             }
 
