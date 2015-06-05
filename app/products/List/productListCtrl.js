@@ -25,7 +25,9 @@
     function ProductListCtrl(productResource) {
         var vm = this;
 
-        productResource.query(success, failure);
+//        productResource.query(success, failure);
+
+        vm.products = productResource.get();
 
         function success(data) {
             vm.products = data;
