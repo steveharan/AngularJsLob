@@ -6,6 +6,7 @@
         .factory("productResource",["$resource",productResource]);
 
     function productResource($resource) {
-        return $resource("/api/products/:productId")
+        return $resource('https://steveharan.firebaseio.com/products:id.json');
+//        return $resource("/api/products/:productId")
     }
 }());

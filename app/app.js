@@ -25,8 +25,7 @@
             "ui.mask",
             "ui.bootstrap",
             "firebase",
-            "angularCharts",
-            "productResourceMock"
+            "angularCharts"
         ]);
 
     app.config(function ($provide) {
