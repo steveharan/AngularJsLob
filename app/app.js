@@ -93,7 +93,7 @@
 
                             function failure(response) {
                                 toastr.options = toastrOptions;
-                                toastr.error(response.config.url + ' is not available');
+                                toastr.error(response.config.method + ' ' + response.config.url + ' is not available');
                             };
                         }
                     }
