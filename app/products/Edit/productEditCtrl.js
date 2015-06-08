@@ -82,7 +82,8 @@
 
             vm.submit = function (isValid ) {
                 if (isValid) {
-                    vm.product.$save(function (data) {
+//always add for now.  change to $save to update a product
+                    vm.product.$add(function (data) {
                         toastr.options = toasterOptions;
                         toastr.success("Save Successful");
                     });
